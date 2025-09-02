@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farsan Amiri - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#FF6A3D',
+                        primary: '#181C23',
+                        secondary: '#23262F',
+                        accent: '#FF6A3D',
+                        textMuted: '#7B7F86'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="bg-primary text-white min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-4 md:px-8 py-6 border-b border-secondary">
+        <div class="flex items-center gap-4">
+            <img src="./Images/favicon.ico" alt="icon" width="50" height="50" class="rounded-sm" />
+            <div class="text-lg font-bold">Farsan Amiri</div>
+        </div>
+
+        <!-- Hamburger button for mobile -->
+        <button id="menu-btn" class="md:hidden text-accent focus:outline-none text-2xl">☰</button>
+
+        <!-- Desktop Nav -->
+        <nav class="space-x-6 hidden md:flex">
+            <a href="#home" class="hover:text-accent transition-colors">Home</a>
+            <a href="#about" class="hover:text-accent transition-colors">About</a>
+            <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+            <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav id="mobile-menu" class="hidden flex-col bg-secondary px-4 py-4 space-y-4 md:hidden">
+        <a href="#home" class="hover:text-accent transition-colors">Home</a>
+        <a href="#about" class="hover:text-accent transition-colors">About</a>
+        <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-12 max-w-6xl mx-auto w-full">
+        <div class="flex-1 flex justify-center mb-8 md:mb-0">
+            <div class="relative">
+                <div class="absolute -inset-4 rounded-full border-4 border-accent opacity-30 animate-pulse"></div>
+                <img src="Images/aboutme.jpeg" alt="profile" class="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 max-w-full h-auto rounded-full object-cover border-4 border-secondary" onerror="this.src='https://via.placeholder.com/288'"/>
+            </div>
+        </div>
+        <div class="flex-1 text-center md:text-left">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Hi<span class="text-accent">.</span></h2>
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">
+                <span class="typing-effect">I am a Web Developer</span>
+                <span class="typing-cursor">|</span>
+            </h3>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Software Developer</h1>
+            <div class="flex justify-center md:justify-start space-x-4 mb-8">
+                <button class="border border-white px-6 py-2 rounded hover:bg-white hover:text-primary transition-colors">
+                    <a href="https://farsanamiri.github.io/Resume/">My Resume</a>
+                </button>
+            </div>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 text-textMuted text-sm">
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>Sass</span>
+                <span>React</span>
+                <span>Kotlin</span>
+                <span>Flutter</span>
+                <span>Swift</span>
+                <span>Django</span>
+                <span>Git</span>
+                <span>GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="px-4 md:px-8 py-12 max-w-6xl mx-auto w-full">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6">About Me</h2>
+        <p class="text-textMuted leading-relaxed">Hello i'm Farsan amiri i'm 16 and can programming with python, java, kotlin, dart, ruby, c, c++, c#, wordpress, flutter Front end : Html5, Css3, Java Script, Bootstrap, Scss, Less, React, Jquery At 2024 i graduated from cs50x harvard and cs50p of harvard unvircity and In the link below you can watch the certifcates of it And also i graduated from univercity of tehran for Ai course and c language course of univercity of sharif And also i graduated from MFT for python and c++ and c# courses And you can watch other certifcates from me at below I can speak English , French , Persian</p>
+        <button class="bg-accent text-white px-4 py-2 rounded hover:bg-[#e85b2f] w-full mt-6 transition-colors">
+            <a href="https://drive.google.com/drive/folders/1wiU1i-z6PG9adFteHX0I2XLyXTmhAiQf">My certifcates</a>
+        </button>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="px-4 md:px-8 py-12 max-w-6xl mx-auto w-full">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6">Projects</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+            <div class="bg-secondary p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center">Fly Better</h3>
+                <p class="text-textMuted mb-4">A website for reserve ticket and Fly Better is built with Bootstrap 5 for responsive layouts, CSS3 for sleek styling, and JavaScript for dynamic features like geolocation and API integrations. The site uses Font Awesome for icons, Pexels/Unsplash for images, and modular design for scalability. Interactive tabs, modals, and forms enhance user experience, while lazy loading ensures performance. From flight bookings to destination discovery, and all of logos and icons created by Ai.</p>
+                <a href="https://farsanamiri.github.io/Booking" class="text-accent hover:underline flex items-center justify-center transition-colors">View Project</a>
+            </div>
+            <div class="bg-secondary p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-lg sm:text-xl font-semibold mb-2 text-center">Resume</h3>
+                <p class="text-textMuted mb-4">A website for mine Resume And i used React and animated motion background with a npm librery and it has dynamic content loading from JSON data Styled with CSS modules, it showcases skills with animated progress bars, social media integration (react-social-icons), and a responsive design. and Also i deployed it on thr github domain and github host</p>
+                <a href="https://farsanamiri.github.io/Resume" class="text-accent hover:underline flex items-center justify-center transition-colors">View Project</a>
+            </div>
+            <div class="bg-secondary p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-lg sm:text-xl font-semibold mb-2">Store</h3>
+                <p class="text-textMuted mb-4">Advanced Product Filtering System
+
+                    The application includes a sophisticated filtering system that allows users to:
+
+                    Filter by multiple criteria simultaneously (brand, specifications, price range) Toggle in-stock only products Clear filters with a single click Responsive filter sidebar that collapses on mobile devices Performance Optimizations
+
+                    Lazy Loading: Images and components load only when needed Memoization: Critical components use React.memo to prevent unnecessary re-renders Code Splitting: Routes are loaded dynamically for faster initial load Particle.js Optimization: Background particles automatically adjust density based on device capability</p>
+                <a href="https://store-five-lovat.vercel.app" class="text-accent hover:underline flex items-center justify-center transition-colors">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="actions" class="px-4 md:px-8 py-12 max-w-6xl mx-auto w-full">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6">Application</h2>
+
+        <div class="flex items-center relative">
+            <!-- Left Arrow -->
+            <button id="prev-btn" class="slider-arrow absolute -left-12 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-accent text-white rounded-full flex items-center justify-center z-10 hover:bg-[#e85b2f] transition-colors">&#10094;</button>
+
+            <!-- Slider -->
+            <div id="action-slider" class="flex overflow-x-auto space-x-6 snap-x snap-mandatory scrollbar-hide scroll-smooth w-full py-4">
+                <!-- Card 1 -->
+                <div class="w-80 h-80 bg-secondary rounded-xl shadow flex-shrink-0 snap-center transition-transform hover:scale-105 hover:-translate-y-2">
+                    <div class="p-6 flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-3">Calculator</h3>
+                        <p class="text-textMuted mb-4 flex-grow">Calculator App built with Kotlin for Android. Supports basic arithmetic operations and a clean UI.</p>
+                        <button onclick="openModal('modal1')" class="bg-accent text-white py-2 rounded hover:bg-[#e85b2f] w-full transition-colors">More</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="w-80 h-80 bg-secondary rounded-xl shadow flex-shrink-0 snap-center transition-transform hover:scale-105 hover:-translate-y-2">
+                    <div class="p-6 flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-3">Quiz App</h3>
+                        <p class="text-textMuted mb-4 flex-grow">A simple quiz app for Android using Kotlin. Test your knowledge of country flags with multiple-choice questions.</p>
+                        <button onclick="openModal('modal2')" class="bg-accent text-white py-2 rounded hover:bg-[#e85b2f] w-full transition-colors">More</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="w-80 h-80 bg-secondary rounded-xl shadow flex-shrink-0 snap-center transition-transform hover:scale-105 hover:-translate-y-2">
+                    <div class="p-6 flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-3">Weather App</h3>
+                        <p class="text-textMuted mb-4 flex-grow">A weather app built with Kotlin. Fetches live weather data and displays forecasts with a clean UI.</p>
+                        <button onclick="openModal('modal3')" class="bg-accent text-white py-2 rounded hover:bg-[#e85b2f] w-full transition-colors">More</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="w-80 h-80 bg-secondary rounded-xl shadow flex-shrink-0 snap-center transition-transform hover:scale-105 hover:-translate-y-2">
+                    <div class="p-6 flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-3">Clock</h3>
+                        <p class="text-textMuted mb-4 flex-grow">A simple Android clock app showing current time and date for different cities worldwide.</p>
+                        <button onclick="openModal('modal4')" class="bg-accent text-white py-2 rounded hover:bg-[#e85b2f] w-full transition-colors">More</button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="w-80 h-80 bg-secondary rounded-xl shadow flex-shrink-0 snap-center transition-transform hover:scale-105 hover:-translate-y-2">
+                    <div class="p-6 flex flex-col h-full">
+                        <h3 class="text-xl font-semibold mb-3">To-Do List</h3>
+                        <p class="text-textMuted mb-4 flex-grow">A lightweight To-Do List app with add, edit, search, and task management. Built with Kotlin and ViewBinding.</p>
+                        <button onclick="openModal('modal5')" class="bg-accent text-white py-2 rounded hover:bg-[#e85b2f] w-full transition-colors">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button id="next-btn" class="slider-arrow absolute -right-12 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-accent text-white rounded-full flex items-center justify-center z-10 hover:bg-[#e85b2f] transition-colors">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- ===== MODALS ===== -->
+    <div id="modal1" class="modal fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+        <div class="modal-box bg-secondary w-full max-w-md rounded-xl p-6 relative">
+            <button onclick="closeModal('modal1')" class="modal-close absolute top-4 right-4 text-white text-2xl bg-transparent border-none cursor-pointer">&times;</button>
+            <h2 class="modal-title text-white text-xl font-bold mb-4">Calculator App</h2>
+            <p class="modal-text text-textMuted mb-6">A simple calculator built with Kotlin. Includes arithmetic operations, error handling, and a clean UI.</p>
+            <div class="modal-actions flex gap-4">
+                <a href="https://github.com/Farsanamiri/Kotlin_Calculator" target="_blank" class="github-btn flex items-center justify-center gap-2 bg-gray-700 text-white py-2 px-4 rounded flex-1 text-center no-underline hover:bg-gray-600 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.6 1.1 1.6 1.1 1 .1.8 2.2 3.7 1.5.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-6a4.7 4.7 0 0 1 1.3-3.2c-.1-.3-.6-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.8.1 3.1a4.7 4.7 0 0 1 1.3 3.2c0 4.7-2.7 5.7-5.3 6 .5.5.9 1.3.9 2.6v3.9c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                    </svg>GitHub
+                </a>
+                <a href="https://drive.google.com/file/d/1JONzS6HHM1X49_gfyRieKAqgKr8fXsHy/view?usp=share_link" class="download-btn bg-accent text-white py-2 px-4 rounded flex-1 text-center no-underline hover:bg-[#e85b2f] transition-colors">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+        <div class="modal-box bg-secondary w-full max-w-md rounded-xl p-6 relative">
+            <button onclick="closeModal('modal2')" class="modal-close absolute top-4 right-4 text-white text-2xl bg-transparent border-none cursor-pointer">&times;</button>
+            <h2 class="modal-title text-white text-xl font-bold mb-4">Quiz App</h2>
+            <p class="modal-text text-textMuted mb-6">An Android quiz app built with Kotlin. Test knowledge of country flags with multiple-choice questions.</p>
+            <div class="modal-actions flex gap-4">
+                <a href="https://github.com/Farsanamiri/QuizApp" target="_blank" class="github-btn flex items-center justify-center gap-2 bg-gray-700 text-white py-2 px-4 rounded flex-1 text-center no-underline hover:bg-gray-600 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 .5..." />
+                    </svg>GitHub
+                </a>
+                <a href="https://drive.google.com/file/d/1TWjugQtnz3qHF4gn4dsoPY2Yib5zTkmB/view?usp=share_link" class="download-btn bg-accent text-white py-2 px-4 rounded flex-1 text-center no-underline hover:bg-[#e85b2f] transition-colors">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-textMuted py-6 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
+            <p>© 2025 Farsan Amiri. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="https://www.linkedin.com/in/farsan-amiri-8171a5223/" class="hover:text-white transition-colors">LinkedIn</a>
+                <a href="https://github.com/Farsanamiri" class="hover:text-white transition-colors">GitHub</a>
+                <a href="#" class="hover:text-white transition-colors">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
